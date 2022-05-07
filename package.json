@@ -1,0 +1,45 @@
+{
+  "name": "vite-admin",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js, .ts, .tsx, .vue src/** --no-error-on-unmatched-pattern --quiet",
+    "lint:fix": "eslint --ext .js, .ts, .tsx, .vue src/** --no-error-on-unmatched-pattern --quiet --fix",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "element-plus": "^2.1.11",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.15",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^8.14.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
+    "mrm": "^4.0.0",
+    "prettier": "^2.6.2",
+    "unplugin-auto-import": "^0.7.1",
+    "unplugin-vue-components": "^0.19.3",
+    "vite": "^2.9.7"
+  },
+  "lint-staged": {
+    "*.{js, vue, ts}": "eslint --cache --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}
