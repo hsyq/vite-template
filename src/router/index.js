@@ -19,12 +19,6 @@ const routes = [
 ]
 
 const router = createRouter({
-  // vite在开发阶段是直接运行在浏览器中，所以没有process对象，自然不能使用process.env.NODE_ENV
-
-  // 可知，createWebHistory()可以接收一个参数，作为基础路由
-  // history: createWebHistory(process.env.BASE_URL),
-  // vite中通过import.meta.env从环境文件中读取变量
-  // history: createWebHistory(import.meta.env.VITE_BASE_URL),
   history: createWebHistory(),
   routes
 })
